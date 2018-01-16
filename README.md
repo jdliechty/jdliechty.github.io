@@ -9,43 +9,43 @@ installed via homebrew on local computer (running OS X).
 Then in directory for webpage on local computer.
 
 ```shell
-jdliechty$ jekyll new jdliechty.github.io
-jdliechty$ cd jdliechty.github.io
+$ jekyll new jdliechty.github.io
+$ cd jdliechty.github.io
 ```
 
 And test:
 
 ```shell
-jdliechty$ jekyll serve
+$ jekyll serve
 ```
 
 Then to locate minima configuration files on the local computer:
 
 ```shell
-jdliechty$ bundle show minima 
+$ bundle show minima 
 /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1
 ```
 
 And copy the minima configuration files into local directory:
 
 ```shell
-jdliechty$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_includes .
-jdliechty$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_layouts .
-jdliechty$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_sass .
-jdliechty$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/assets .
+$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_includes .
+$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_layouts .
+$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_sass .
+$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/assets .
 ```
 
 Initialized empty Git repository in directory for website on local computer.
 
 ```shell
-jdliechty$ git init
-jdliechty$ git config user.email <your-email-here>
+$ git init
+$ git config user.email <your-email-here>
 ```
 
 Then:
 
 ```shell
-jdliechty$ jekyll serve
+$ jekyll serve
 ```
 
 and you should see the jekyll minima default website at http://127.0.0.1:4000
@@ -53,14 +53,14 @@ and you should see the jekyll minima default website at http://127.0.0.1:4000
 Added custom domain info to CNAME file...
 
 ```shell
-jdliechty$ git add .
-jdliechty$ git commit -m "Initial default minima install."
+$ git add .
+$ git commit -m "Initial default minima install."
 ```
 
 Edit title, author, etc. information in `_config.yml`
 
 ```shell
-jdliechty$ touch contact.md docs.md posts.md projects.md
+$ touch contact.md docs.md posts.md projects.md
 ```
 
 Add the following to the `_contig.yml` to designate which menus should appear and in what order:
@@ -74,83 +74,105 @@ header_pages:
   - contact.md 
 ```
 
-Edit about.md to read:
+Edit `about.md` to read:
 
+```yml
 ---
 layout: page
 title: about
 permalink: /about/
 ---
+```
 
 and edit each respective page:
 
+```yml
 ---
 layout: page
 title: contact
 permalink: /contact/
 ---
+```
 
+```yml
 ---
 layout: page
 title: docs
 permalink: /docs/
 ---
+```
 
+```yml
 ---
 layout: page
 title: posts
 permalink: /posts/
 ---
+```
 
+```yml
 ---
 layout: page
 title: projects
 permalink: /projects/
 ---
+```
 
-jdliechty$ touch README.md
+```shell
+$ touch README.md
+```
 
-Removed "posts" loop in _layouts/home.html
-Added "posts" loop to posts.md
+Removed "posts" loop in `_layouts/home.html`
+Added "posts" loop to `posts.md`
 
-Make the site-title a little heavier.  In _sass/minima/_layout.scss:
+Make the site-title a little heavier.  In `_sass/minima/_layout.scss`:
 
+```css
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
+```
 
 changed this to:
+
+```css
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 600;
+```
 
 and reduce the size of the page titles
 
-In _sass/minima/_layout.scss
+In `_sass/minima/_layout.scss`
 
 Changed:
 
+```css
 .post-title {
   @include relative-font-size(2.625);
-
+```
 
 to 
 
+```css
 .post-title {
   @include relative-font-size(1.75);
+```
 
+And in `_layouts/default.html`, commented out liquid tag for including footer:
 
-And in _layouts/default.html, commented out liquid tag for including footer:
-
+```html
     {% comment %}
     {% include footer.html %}
     {% endcomment %}
-
+```
 
 Then:
 
-jdliechty$ git add .
-jdliechty$ git commit -m "Changed page header font, removed footer"
-jdliechty$ git push -u origin master
+```shell
+$ git add .
+$ git commit -m "Changed page header font, removed footer"
+$ git push -u origin master
+```
 
 
