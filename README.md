@@ -12,8 +12,8 @@ installed via homebrew on local computer (running OS X).
 Then in directory for webpage on local computer.
 
 ```shell
-$ jekyll new jdliechty.github.io
-$ cd jdliechty.github.io
+$ jekyll new <your-github-handle>.github.io
+$ cd <your-github-handle>.github.io
 ```
 
 And test:
