@@ -1,4 +1,4 @@
-#Phase 1:  
+# Phase 1:  
 
 I wanted to get a website up-and-running on GitHub with Jekyll using Jekyll's Minima 
 theme but with a few adjustments:  Shorter blog-like posts would appear in a separate 
