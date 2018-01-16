@@ -21,28 +21,22 @@ And test:
 ```shell
 $ jekyll serve
 ```
+Initialized empty Git repository in directory and set remote directory to `<your-github-handle>.github.io`
 
-Then to locate minima configuration files on the local computer:
+To locate minima configuration files on the local computer:
 
 ```shell
 $ bundle show minima 
 /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1
 ```
 
-And copy the minima configuration files into local directory:
+Copied the minima configuration files into local directory:
 
 ```shell
 $ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_includes .
 $ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_layouts .
 $ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_sass .
 $ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/assets .
-```
-
-Initialized empty Git repository in directory for website on local computer.
-
-```shell
-$ git init
-$ git config user.email <your-email-here>
 ```
 
 Then:
