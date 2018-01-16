@@ -50,14 +50,11 @@ $ jekyll serve
 
 and you should see the jekyll minima default website at http://127.0.0.1:4000
 
-Added custom domain info to CNAME file...
-
-```shell
-$ git add .
-$ git commit -m "Initial default minima install."
-```
+Added custom domain info to `CNAME file`
 
 Edit title, author, etc. information in `_config.yml`
+
+Create files for the four additional menu items (in addition to "about"):
 
 ```shell
 $ touch contact.md docs.md posts.md projects.md
