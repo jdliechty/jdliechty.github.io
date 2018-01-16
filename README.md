@@ -1,4 +1,6 @@
-Phase 1:  I wanted to get a website up-and-running on GitHub with Jekyll using Jekyll's Minima 
+#Phase 1:  
+
+I wanted to get a website up-and-running on GitHub with Jekyll using Jekyll's Minima 
 theme but with a few adjustments:  Shorter blog-like posts would appear in a separate 
 page (not on the landing page) and there would be separate pages for coding projects 
 and longer documents (each with their own entry in the menus).
@@ -50,17 +52,17 @@ $ jekyll serve
 
 and you should see the jekyll minima default website at http://127.0.0.1:4000
 
-Added custom domain info to `CNAME file`
+Added custom domain info to `CNAME` file.
 
-Edit title, author, etc. information in `_config.yml`
+Edited title, author, etc. information in `_config.yml`
 
-Create files for the four additional menu items (in addition to "about"):
+Created files for the four additional menu items (in addition to "about"):
 
 ```shell
 $ touch contact.md docs.md posts.md projects.md
 ```
 
-Add the following to the `_contig.yml` to designate which menus should appear and in what order:
+Added the following to the `_contig.yml` to designate which menus should appear and in what order:
 
 ```yml
 header_pages:
@@ -71,7 +73,7 @@ header_pages:
   - contact.md 
 ```
 
-Edit `about.md` to read:
+Edited `about.md` to read:
 
 ```yml
 ---
@@ -81,7 +83,7 @@ permalink: /about/
 ---
 ```
 
-and edit each respective page:
+and edited for each respective page for menus:
 
 ```yml
 ---
@@ -122,7 +124,7 @@ $ touch README.md
 Removed "posts" loop in `_layouts/home.html`
 Added "posts" loop to `posts.md`
 
-Make the site-title a little heavier.  In `_sass/minima/_layout.scss`:
+Made the site-title a little heavier.  In `_sass/minima/_layout.scss`:
 
 ```css
 .site-title {
@@ -138,7 +140,7 @@ changed this to:
   font-weight: 600;
 ```
 
-and reduce the size of the page titles
+and reduced the size of the page titles
 
 In `_sass/minima/_layout.scss`
 
