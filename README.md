@@ -1,11 +1,12 @@
-# Phase 1:  
+## Phase 1:  
 
 I wanted to get a website up-and-running on GitHub with Jekyll using Jekyll's Minima 
 theme but with a few adjustments:  Shorter blog-like posts would appear in a separate 
 page (not on the landing page) and there would be separate pages for coding projects 
-and longer documents (each with their own entry in the menus).
+and longer documents (each with their own entry in the menus).  Below is a very brief
+outline of the steps taken to do that.
 
-Started with new, empty repository jdliechty.github.io on GitHub and using Jekyll is 
+Started with new, empty repository `<your-github-handle>.github.io` on GitHub and using Jekyll is 
 installed via homebrew on local computer (running OS X).
 
 Then in directory for webpage on local computer.
