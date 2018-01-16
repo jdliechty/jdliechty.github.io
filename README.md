@@ -21,42 +21,58 @@ jdliechty$ jekyll serve
 
 Then to locate minima configuration files on the local computer:
 
-jdliechty$ bundle show minima
+```shell
+jdliechty$ bundle show minima 
 /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1
+```
 
 And copy the minima configuration files into local directory:
 
+```shell
 jdliechty$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_includes .
 jdliechty$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_layouts .
 jdliechty$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/_sass .
 jdliechty$ cp -R /usr/local/lib/ruby/gems/2.5.0/gems/minima-2.1.1/assets .
+```
 
+Initialized empty Git repository in directory for website on local computer.
+
+```shell
 jdliechty$ git init
-Initialized empty Git repository in /Users/jdliechty/github/jdliechty.github.io/.git/
-jdliechty$ git config user.email 4789148+jdliechty@users.noreply.github.com
+jdliechty$ git config user.email <your-email-here>
+```
 
 Then:
 
+```shell
 jdliechty$ jekyll serve
+```
 
 and you should see the jekyll minima default website at http://127.0.0.1:4000
-jdliechty$ echo "www.dormilon.org" > CNAME
 
+Added custom domain info to CNAME file...
+
+```shell
 jdliechty$ git add .
 jdliechty$ git commit -m "Initial default minima install."
+```
 
-Edit title, author, etc. information in _config.yml
+Edit title, author, etc. information in `_config.yml`
 
+```shell
 jdliechty$ touch contact.md docs.md posts.md projects.md
+```
 
-Add the following to the _contig.yml to designate which menus should appear and in what order:
+Add the following to the `_contig.yml` to designate which menus should appear and in what order:
 
+```yml
 header_pages:
   - projects.md
   - docs.md
   - posts.md
   - about.md
   - contact.md 
+```
 
 Edit about.md to read:
 
