@@ -160,8 +160,13 @@ And in `_layouts/default.html`, commented out liquid tag for including footer:
     {% include footer.html %}
     {% endcomment %}
 ```
+Make sure it looks OK locally:
 
-Then:
+```shell
+$ jekyll serve
+```
+
+then:
 
 ```shell
 $ git add .
