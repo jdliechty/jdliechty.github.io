@@ -68,7 +68,7 @@ header_pages:
   - contact.md 
 ```
 
-Edited `about.md` to read:
+Edited the YAML header in `about.md` to read:
 
 ```yml
 ---
@@ -78,7 +78,7 @@ permalink: /about/
 ---
 ```
 
-and edited for each respective page for menus:
+and added a YAML header in the markdown file for each respective menu:
 
 ```yml
 ---
