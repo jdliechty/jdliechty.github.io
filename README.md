@@ -119,6 +119,8 @@ $ touch README.md
 Removed "posts" loop in `_layouts/home.html`
 Added "posts" loop to `posts.md`
 
+![before](BeforeFontChanges.jpeg)
+
 Made the site-title a little heavier.  In `_sass/minima/_layout.scss`:
 
 ```css
@@ -166,7 +168,9 @@ Make sure it looks OK locally:
 $ jekyll serve
 ```
 
-then:
+![after](AfterRemovingFooter.jpg)
+
+Then:
 
 ```shell
 $ git add .
