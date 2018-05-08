@@ -13,7 +13,7 @@ I then worked for 9 years doing benchwork molecular and cell biology in a commer
 
 We moved to Austin, Texas in 1997 when my spouse was hired to a faculty position at University of Texas, Austin.
 Later, I was admitted to the [Computer Science program][txstate-cs-dept] at Texas State University, San Marcos and I graduated 
-from there with a Master of Science degree in Computer Science in 2002.
+from there with a Master of Science degree in Computer Science (with a minor in Mathematics) in 2002.
 
 In 2003 my spouse began her current position  at the University of California, Davis, bringing us back to California.
 
