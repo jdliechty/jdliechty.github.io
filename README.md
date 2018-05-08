@@ -119,6 +119,8 @@ $ touch README.md
 Removed "posts" loop in `_layouts/home.html`
 Added "posts" loop to `posts.md`
 
+Before editing the fonts a little, here's what the "posts" page looked like:
+
 ![before](_BeforeFontChanges.jpeg)
 
 Made the site-title a little heavier.  In `_sass/minima/_layout.scss`:
@@ -168,9 +170,11 @@ Make sure it looks OK locally:
 $ jekyll serve
 ```
 
+And here's what the "posts" page looked like with the modified fonts:
+
 ![after](_AfterRemovingFooter.jpg)
 
-Then:
+Then pushed the changes to the server::
 
 ```shell
 $ git add .
